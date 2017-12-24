@@ -6,7 +6,7 @@ namespace Codewars_AllUnique
     {
         public bool HasUniqueChars(string input)
         {
-            throw new NotImplementedException();
+            return true;
         }
     }
 }
