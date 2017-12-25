@@ -23,5 +23,18 @@ namespace Codewars_AllUnique
         {
             Assert.IsFalse(new Kata().HasUniqueChars("aa"));
         }
+
+        [TestMethod]
+        public void Input_AB_Should_Be_True()
+        {
+            Assert.IsTrue(new Kata().HasUniqueChars("AB"));
+        }
+
+        [TestMethod]
+        public void Input_baa_Should_Be_False()
+        {
+            Assert.IsFalse(new Kata().HasUniqueChars("baa"));
+        }
+
     }
 }
