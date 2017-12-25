@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Codewars_AllUnique
 {
@@ -6,6 +7,8 @@ namespace Codewars_AllUnique
     {
         public bool HasUniqueChars(string input)
         {
+            if (input.Count(x => x == input[0]) > 1)
+                return false;
             return true;
         }
     }
