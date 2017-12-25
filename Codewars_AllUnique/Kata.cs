@@ -7,14 +7,7 @@ namespace Codewars_AllUnique
     {
         public bool HasUniqueChars(string input)
         {
-            foreach (char c in input)
-            {
-                if (input.Count(x => x.Equals(c)) > 1)
-                {
-                    return false;
-                }
-            }
-            return true;
+            return input.All(c => input.Count(x => x.Equals(c)) <= 1);
         }
     }
 }
