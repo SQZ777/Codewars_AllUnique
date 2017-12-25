@@ -36,5 +36,35 @@ namespace Codewars_AllUnique
             Assert.IsFalse(new Kata().HasUniqueChars("baa"));
         }
 
+        [TestMethod]
+        public void Input_Should_Should_Be_True()
+        {
+            Assert.IsTrue(new Kata().HasUniqueChars("Should"));
+        }
+
+        [TestMethod]
+        public void Input_abcdef_Should_Be_True()
+        {
+            Assert.IsTrue(new Kata().HasUniqueChars("abcdef"));
+        }
+
+        [TestMethod]
+        public void Input_¥[¥[´î_Should_Be_False()
+        {
+            Assert.IsFalse(new Kata().HasUniqueChars("++-"));
+        }
+
+        [TestMethod]
+        public void Input_SpaceSpacenAa_Should_Be_False()
+        {
+            Assert.IsFalse(new Kata().HasUniqueChars("  nAa"));
+        }
+
+        [TestMethod]
+        public void Input_aba_Should_Be_False()
+        {
+            Assert.IsFalse(new Kata().HasUniqueChars("aba"));
+        }
+
     }
 }
